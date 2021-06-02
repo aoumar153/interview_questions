@@ -1,5 +1,5 @@
 ## interview_questions
- ###Question 2b:
+### Question 2b:
 For this Question I used the data from the github provided which showed a normal distribution with the mean at approximately 23.0361 and the standard deviation at 2.99 or 3. You can tell this is a normal distribution since the mean and median look like they would be in the same area so the distribution has a definite point or mountain figure.
 ## Non coding questions
 ### Question 3 : 
