@@ -7,6 +7,9 @@ Created on Tue Jun  1 02:47:17 2021
 
 import pandas as pd
 
+name_table = pd.DataFrame({'StudentID':['V001','V002','V003','V004'], 'Names':['Abe','Abhay','Acelin','Adelphos']})
+mark_table = pd.DataFrame({'StudentID':['V001','V002','V003','V004'], 'Total_marks':[95,80,74,81]})
+
 def up (x):
     con = 'e'
     #c = 'E'
@@ -19,12 +22,11 @@ def up (x):
     else : return x
  
 
-       
-name_table = pd.DataFrame({'StudentID':['V001','V002','V003','V004'], 'Names':['Abe','Abhay','Acelin','Adelphos']})
+def u():       
 
-mark_table = pd.DataFrame({'StudentID':['V001','V002','V003','V004'], 'Total_marks':[95,80,74,81]})
 
-name_table['Names'] = name_table['Names'].apply(up)
+    name_table['Names'] = name_table['Names'].apply(up)
+    return name_table
 
 
 
@@ -40,5 +42,5 @@ def dfnew():
     
     avg = pd.DataFrame({'Uppercase E':[mean2],'Lowercase b':mean1})
     print(avg)  
-
+name_table = u()
 dfnew()
